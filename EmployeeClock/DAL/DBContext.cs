@@ -149,6 +149,12 @@ namespace EmployeeClock.DAL
             return output;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="parameters"></param>
+        /// <returns></returns>
         public object ExecuteScalar(string query, SqlParameter[] parameters)
         {
             object output;
