@@ -9,6 +9,13 @@ using System.Threading.Tasks;
 
 namespace EmployeeClock.DAL
 {
+
+
+
+    //התבקשנו לשנות את כל בגישה לדטה לגישה יותר מאובטחת ולהעביר כמה שיותר לוגיקה ל - אס קיו אל
+    //לכן פתחתי מחלקה חדשה לממש את האינטרפייס  של הגישה לנתונים בדרך שונה
+    //כדי להשתמש במחלקה זו צריך להחליף ב PROGRAM את המימוש של האינטרפייס ל DalCorrect
+    //בינתיים המחלקה הזאת לא ממומשת עד הסוף. לא הספקתי
     public class DalCorrect : IDal
     {
         DBContext dbContext;

@@ -21,6 +21,7 @@ namespace EmployeeClock
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
+            //if DalCorrect is finished so use that its better. else use Dal implemantation.
             IDal dal = new Dal(new DBContext());
             new View.FormHandler(dal);
             Application.Run();
